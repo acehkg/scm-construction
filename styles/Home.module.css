@@ -1,0 +1,80 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logoWrapper {
+  width: 100%;
+  max-width: 400px;
+}
+
+.headLine {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.email {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  text-decoration: underline;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.phone {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-decoration: underline;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.phoneDesktop {
+  width: 40%;
+  display: none;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 720px) {
+  .phone {
+    display: none;
+  }
+  .phoneDesktop {
+    display: flex;
+  }
+}
+
+@media (max-width: 1024px) {
+  .email,
+  .phoneDesktop {
+    width: 60%;
+  }
+}
+
+@media (max-width: 600px) {
+  .email,
+  .phone {
+    width: 80%;
+  }
+}
